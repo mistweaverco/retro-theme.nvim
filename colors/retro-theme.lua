@@ -1,1 +1,1 @@
-require('retro-theme').load()
+require("retro-theme").load()

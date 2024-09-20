@@ -4,49 +4,49 @@ local shade = require("retro-theme.lib.shade")
 local config = require("retro-theme").config
 
 local t = {
-  bg                    = hsl("#1c1e26"),
-  bgFloat               = hsl("#1b1d23"),
-  fg                    = hsl("#c8d0e0"),
-  cursor                = hsl("#ffdd33"),
-  keyword               = hsl("#ff5df4"),
-  comment               = hsl("#7fd1b9"),
-  punctuation           = hsl("#f4a1ff"),
-  method                = hsl("#00ffbf"),
-  type                  = hsl("#ff6ac1"),
-  string                = hsl("#b7ff6a"),
-  number                = hsl("#ff57ff"),
-  constant              = hsl("#bd93f9"),
-  tag                   = hsl("#6cdbff"),
-  attribute             = hsl("#8cff8f"),
-  property              = hsl("#6de0b4"),
-  parameter             = hsl("#9df9ff"),
-  label                 = hsl("#50e3c2"),
+  bg = hsl("#1c1e26"),
+  bgFloat = hsl("#1b1d23"),
+  fg = hsl("#c8d0e0"),
+  cursor = hsl("#ffdd33"),
+  keyword = hsl("#ff5df4"),
+  comment = hsl("#7fd1b9"),
+  punctuation = hsl("#f4a1ff"),
+  method = hsl("#00ffbf"),
+  type = hsl("#ff6ac1"),
+  string = hsl("#b7ff6a"),
+  number = hsl("#ff57ff"),
+  constant = hsl("#bd93f9"),
+  tag = hsl("#6cdbff"),
+  attribute = hsl("#8cff8f"),
+  property = hsl("#6de0b4"),
+  parameter = hsl("#9df9ff"),
+  label = hsl("#50e3c2"),
 
   -- workspace
-  primary               = hsl("#00dfff"),
-  selection             = hsl("#336699"),
-  search                = hsl("#00ff88"),
-  diffAdd               = hsl("#00ff88"),
-  diffChange            = hsl("#00bfff"),
-  diffDelete            = hsl("#ff5555"),
-  added                 = hsl("#2ee085"),
-  changed               = hsl("#00ccff"),
-  deleted               = hsl("#ff4d6a"),
+  primary = hsl("#00dfff"),
+  selection = hsl("#336699"),
+  search = hsl("#5a4472"),
+  diffAdd = hsl("#00ff88"),
+  diffChange = hsl("#00bfff"),
+  diffDelete = hsl("#ff5555"),
+  added = hsl("#2ee085"),
+  changed = hsl("#00ccff"),
+  deleted = hsl("#ff4d6a"),
 
-  diffText              = hsl("#00bfff").lighten(15),
-  error                 = hsl("#ff445d"),
-  errorBG               = hsl("#ffccd2"),
-  warning               = hsl("#6be6a2"),
-  warningBG             = hsl("#d4ffe0"),
-  info                  = hsl("#00dfff"),
-  infoBG                = hsl("#d0f4ff"),
-  hint                  = hsl("#a3adff"),
-  mergeCurrent          = hsl("#5a4472"),
-  mergeCurrentLabel     = hsl("#8f5ea5"),
-  mergeIncoming         = hsl("#4465b3"),
-  mergeIncomingLabel    = hsl("#558edc"),
-  mergeParent           = hsl("#7946b8"),
-  mergeParentLabel      = hsl("#8b5edc"),
+  diffText = hsl("#00bfff").lighten(15),
+  error = hsl("#ff445d"),
+  errorBG = hsl("#ffccd2"),
+  warning = hsl("#6be6a2"),
+  warningBG = hsl("#d4ffe0"),
+  info = hsl("#00dfff"),
+  infoBG = hsl("#d0f4ff"),
+  hint = hsl("#a3adff"),
+  mergeCurrent = hsl("#5a4472"),
+  mergeCurrentLabel = hsl("#8f5ea5"),
+  mergeIncoming = hsl("#4465b3"),
+  mergeIncomingLabel = hsl("#558edc"),
+  mergeParent = hsl("#7946b8"),
+  mergeParentLabel = hsl("#8b5edc"),
 }
 
 t.shade1 = shade(t.bg, 1)
@@ -94,7 +94,7 @@ colors["CursorLine"] = { bg = t.grey7 }
 colors["CursorColumn"] = colors["CursorLine"]
 colors["Whitespace"] = { fg = t.grey10 }
 
- -- any comment
+-- any comment
 colors["Comment"] = { fg = t.comment, italic = config.italic_comments }
 
 -- Line number for ":number" and ":#" commands,
@@ -106,72 +106,72 @@ colors["CursorLineNr"] = { fg = t.comment }
 colors["Search"] = { bg = t.search }
 colors["IncSearch"] = { bg = t.cursor.mix(t.bg, 10), fg = t.bg }
 colors["CurSearch"] = colors["Search"]
-colors["NormalFloat"] = { bg = t.bgFloat, blend = 5 }    -- Normal text in floating windows.
+colors["NormalFloat"] = { bg = t.bgFloat, blend = 5 } -- Normal text in floating windows.
 colors["FloatBorder"] = { fg = t.punctuation }
-colors["NormalSB"] = { bg = t.bgFloat }                  -- Normal text in floating windows.
-colors["ColorColumn"] = { bg = t.grey5 }                 -- used for the columns set with 'colorcolumn'
-colors["Conceal"] = {}                                   -- placeholder characters substituted for concealed text (see 'conceallevel')
-colors["Cursor"] = { bg = t.cursor, fg = t.bg }          -- character under the cursor
-colors["lCursor"] = colors["Cursor"]                           -- the character under the cursor when |language-mapping| is used (see 'guicursor')
-colors["CursorIM"] = colors["Cursor"]                          -- like Cursor, but used when in IME mode |CursorIM|
-colors["Directory"] = { fg = t.keyword }                 -- directory names (and other special names in listings)
-colors["DiffAdd"] = { bg = t.diffAdd }                   -- diff mode: Added line |diff.txt|
-colors["DiffChange"] = { bg = t.diffChange }             -- diff mode: Changed line |diff.txt|
-colors["DiffDelete"] = { bg = t.diffDelete }             -- diff mode: Deleted line |diff.txt|
-colors["DiffText"] = { bg = t.diffText }                 -- diff mode: Changed text within a changed line |diff.txt|
-colors["EndOfBuffer"] = { fg = t.punctuation }           -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
-colors["TermCursor"] = colors["Cursor"]                        -- cursor in a focused terminal
-colors["TermCursorNC"] = {}                              -- cursor in an unfocused terminal
-colors["ErrorMsg"] = { fg = t.error }                    -- error messages on the command line
-colors["VertSplit"] = { fg = t.grey30 }                  -- the column separating vertically split windows
-colors["Winseparator"] = colors["VertSplit"]                   -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
-colors["Folded"] = { bg = t.shade7, fg = t.tag }         -- line used for closed folds
-colors["SignColumn"] = colors["Normal"]                        -- column where |signs| are displayed
-colors["FoldColumn"] = colors["SignColumn"]                    -- 'foldcolumn'
-colors["Substitute"] = colors["IncSearch"]                     -- |:substitute| replacement text highlighting
+colors["NormalSB"] = { bg = t.bgFloat } -- Normal text in floating windows.
+colors["ColorColumn"] = { bg = t.grey5 } -- used for the columns set with 'colorcolumn'
+colors["Conceal"] = {} -- placeholder characters substituted for concealed text (see 'conceallevel')
+colors["Cursor"] = { bg = t.cursor, fg = t.bg } -- character under the cursor
+colors["lCursor"] = colors["Cursor"] -- the character under the cursor when |language-mapping| is used (see 'guicursor')
+colors["CursorIM"] = colors["Cursor"] -- like Cursor, but used when in IME mode |CursorIM|
+colors["Directory"] = { fg = t.keyword } -- directory names (and other special names in listings)
+colors["DiffAdd"] = { bg = t.diffAdd } -- diff mode: Added line |diff.txt|
+colors["DiffChange"] = { bg = t.diffChange } -- diff mode: Changed line |diff.txt|
+colors["DiffDelete"] = { bg = t.diffDelete } -- diff mode: Deleted line |diff.txt|
+colors["DiffText"] = { bg = t.diffText } -- diff mode: Changed text within a changed line |diff.txt|
+colors["EndOfBuffer"] = { fg = t.punctuation } -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
+colors["TermCursor"] = colors["Cursor"] -- cursor in a focused terminal
+colors["TermCursorNC"] = {} -- cursor in an unfocused terminal
+colors["ErrorMsg"] = { fg = t.error } -- error messages on the command line
+colors["VertSplit"] = { fg = t.grey30 } -- the column separating vertically split windows
+colors["Winseparator"] = colors["VertSplit"] -- Separator between window splits. Inherts from |hl-VertSplit| by default, which it will replace eventually.
+colors["Folded"] = { bg = t.shade7, fg = t.tag } -- line used for closed folds
+colors["SignColumn"] = colors["Normal"] -- column where |signs| are displayed
+colors["FoldColumn"] = colors["SignColumn"] -- 'foldcolumn'
+colors["Substitute"] = colors["IncSearch"] -- |:substitute| replacement text highlighting
 colors["MatchParen"] = { bg = t.punctuation, fg = t.bg } -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-colors["ModeMsg"] = colors["Normal"]                           -- 'showmode' message (e.g., "-- INSERT -- ")
-colors["MsgArea"] = colors["Normal"]                           -- Area for messages and cmdline
+colors["ModeMsg"] = colors["Normal"] -- 'showmode' message (e.g., "-- INSERT -- ")
+colors["MsgArea"] = colors["Normal"] -- Area for messages and cmdline
 -- MsgSeparator = { } -- Separator for scrolled messages, `msgsep` flag of 'display'
-colors["MoreMsg"] = { fg = t.primary }                   -- |more-prompt|
-colors["NonText"] = { fg = t.shade30 }                   -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-colors["NormalNC"] = colors["Normal"]                          -- normal text in non-current windows
+colors["MoreMsg"] = { fg = t.primary } -- |more-prompt|
+colors["NonText"] = { fg = t.shade30 } -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+colors["NormalNC"] = colors["Normal"] -- normal text in non-current windows
 -- Pmenu = { bg = t.bg, blend = 5 }
 colors["Pmenu"] = colors["NormalFloat"]
-colors["PmenuSel"] = { bg = t.selection }                 -- Popup menu: selected item.
-colors["PmenuSbar"] = { bg = t.grey5 }                    -- Popup menu: scrollbar.
-colors["PmenuThumb"] = { bg = t.shade20 }                 -- Popup menu: Thumb of the scrollbar.
-colors["Question"] = { fg = t.primary }                   -- |hit-enter| prompt and yes/no questions
+colors["PmenuSel"] = { bg = t.selection } -- Popup menu: selected item.
+colors["PmenuSbar"] = { bg = t.grey5 } -- Popup menu: scrollbar.
+colors["PmenuThumb"] = { bg = t.shade20 } -- Popup menu: Thumb of the scrollbar.
+colors["Question"] = { fg = t.primary } -- |hit-enter| prompt and yes/no questions
 colors["QuickFixLine"] = { bg = t.primary, fg = t.white } -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-colors["SpecialKey"] = { fg = t.attribute }               -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
+colors["SpecialKey"] = { fg = t.attribute } -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
 -- TODO: spelling
 -- SpellBad     { gui = "undercurl", sp = t.error  } -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
 -- SpellCap     { } -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 -- SpellLocal   { } -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 -- SpellRare    { } -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
 --
-colors["StatusLine"] = { bg = t.grey10, gui = "" }                           -- status line of current window
-colors["StatusLineNC"] = { bg = t.shade5 }                                   -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+colors["StatusLine"] = { bg = t.grey10, gui = "" } -- status line of current window
+colors["StatusLineNC"] = { bg = t.shade5 } -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 --
-colors["TabLine"] = { bg = t.shade3, fg = t.shade30 }                        -- tab pages line, not active tab page label
-colors["TabLineFill"] = { bg = t.bg }                                        -- tab pages line, where there are no labels
+colors["TabLine"] = { bg = t.shade3, fg = t.shade30 } -- tab pages line, not active tab page label
+colors["TabLineFill"] = { bg = t.bg } -- tab pages line, where there are no labels
 colors["TabLineSel"] = { bg = t.shade10, sp = t.primary, gui = "underline" } -- tab pages line, active tab page label
 --
-colors["Title"] = { fg = t.primary }                                         -- titles for output from ":set all", ":autocmd" etc.
-colors["Visual"] = { bg = t.selection }                                      -- Visual mode selection
-colors["VisualNOS"] = { bg = t.selection }                                   -- Visual mode selection when vim is "Not Owning the Selection".
-colors["WarningMsg"] = { fg = t.warning }                                    -- warning messages
-colors["WildMenu"] = { bg = t.selection }                                    -- current match in 'wildmenu' completion
+colors["Title"] = { fg = t.primary } -- titles for output from ":set all", ":autocmd" etc.
+colors["Visual"] = { bg = t.selection } -- Visual mode selection
+colors["VisualNOS"] = { bg = t.selection } -- Visual mode selection when vim is "Not Owning the Selection".
+colors["WarningMsg"] = { fg = t.warning } -- warning messages
+colors["WildMenu"] = { bg = t.selection } -- current match in 'wildmenu' completion
 --
-colors["Constant"] = { fg = t.constant }                                     -- (preferred) any constant
-colors["String"] = { fg = t.string }                                         --   a string constant: "this is a string"
-colors["Character"] = { fg = t.attribute }                                   --  a character constant: 'c', '\n'
-colors["Number"] = { fg = t.number }                                         --   a number constant: 234, 0xff
-colors["Boolean"] = { fg = t.keyword }                                       --  a boolean constant: TRUE, false
+colors["Constant"] = { fg = t.constant } -- (preferred) any constant
+colors["String"] = { fg = t.string } --   a string constant: "this is a string"
+colors["Character"] = { fg = t.attribute } --  a character constant: 'c', '\n'
+colors["Number"] = { fg = t.number } --   a number constant: 234, 0xff
+colors["Boolean"] = { fg = t.keyword } --  a boolean constant: TRUE, false
 -- Float          { } --    a floating point constant: 2.3e10
-colors["Identifier"] = { fg = t.fg }                                         -- (preferred) any variable name
-colors["Function"] = { fg = t.method }                                       -- function name (also: methods for classes)
-colors["Method"] = { fg = t.method }                                         -- function name (also: methods for classes)
+colors["Identifier"] = { fg = t.fg } -- (preferred) any variable name
+colors["Function"] = { fg = t.method } -- function name (also: methods for classes)
+colors["Method"] = { fg = t.method } -- function name (also: methods for classes)
 colors["Property"] = { fg = t.property }
 colors["Field"] = colors["Property"]
 colors["Parameter"] = { fg = t.parameter }
@@ -180,10 +180,10 @@ colors["Statement"] = { fg = t.keyword } -- (preferred) any statement
 -- Repeat         { } --   for, do, while, etc.
 -- Label          { } --    case, default, etc.
 colors["Punctuation"] = { fg = t.punctuation } -- "sizeof", "+", "*", etc.
-colors["Operator"] = { fg = t.punctuation }    -- "sizeof", "+", "*", etc.
-colors["Keyword"] = colors["Statement"]              --  any other keyword
+colors["Operator"] = { fg = t.punctuation } -- "sizeof", "+", "*", etc.
+colors["Keyword"] = colors["Statement"] --  any other keyword
 -- Exception      { } --  try, catch, throw
-colors["PreProc"] = { fg = t.keyword }         -- (preferred) generic Preprocessor
+colors["PreProc"] = { fg = t.keyword } -- (preferred) generic Preprocessor
 -- Include        { } --  preprocessor #include
 -- Define         { } --   preprocessor #define
 -- Macro          { } --    same as Define
@@ -194,10 +194,10 @@ colors["Class"] = colors["Type"]
 -- StorageClass   { } -- static, register, volatile, etc.
 -- Structure      { } --  struct, union, enum, etc.
 -- Typedef        { } --  A typedef
-colors["Special"] = colors["Character"]   -- (preferred) any special symbol
+colors["Special"] = colors["Character"] -- (preferred) any special symbol
 colors["Attribute"] = colors["Character"] -- (preferred) any special symbol
 -- SpecialChar = {} --  special character in a constant
-colors["Tag"] = { fg = t.tag }      --    you can use CTRL-] on this
+colors["Tag"] = { fg = t.tag } --    you can use CTRL-] on this
 -- Delimiter = {} --  character that needs attention
 -- SpecialComment = { } -- special things inside a comment
 -- Debug          { } --    debugging statements
@@ -205,8 +205,8 @@ colors["Underlined"] = { gui = "underline" } -- (preferred) text that stands out
 colors["Bold"] = { gui = "bold" }
 colors["Italic"] = { gui = "italic" }
 -- ("Ignore", below, may be invisible...)
-colors["Ignore"] = { fg = t.bg }               -- (preferred) left blank, hidden  |hl-Ignore|
-colors["Error"] = colors["ErrorMsg"]                 -- (preferred) any erroneous construct
+colors["Ignore"] = { fg = t.bg } -- (preferred) left blank, hidden  |hl-Ignore|
+colors["Error"] = colors["ErrorMsg"] -- (preferred) any erroneous construct
 colors["Todo"] = { bg = t.info, fg = t.white } -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 colors["WinBar"] = { fg = t.tag, gui = "bold" }
 colors["WinBarNC"] = { fg = t.fg, gui = "" }
@@ -227,18 +227,18 @@ colors["WinBarNC"] = { fg = t.fg, gui = "" }
 
 -- See :h diagnostic-highlights, some groups may not be listed, submit a PR fix to lush-template!
 --
-colors["DiagnosticError"] = colors["Error"]                                                  -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-colors["DiagnosticWarn"] = colors["WarningMsg"]                                              -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-colors["DiagnosticInfo"] = { fg = t.info }                                             -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
-colors["DiagnosticHint"] = { fg = t.hint }                                             -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+colors["DiagnosticError"] = colors["Error"] -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+colors["DiagnosticWarn"] = colors["WarningMsg"] -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+colors["DiagnosticInfo"] = { fg = t.info } -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+colors["DiagnosticHint"] = { fg = t.hint } -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
 colors["DiagnosticVirtualTextError"] = { colors["DiagnosticError"], bg = t.bg.mix(t.error, 20) } -- Used for "Error" diagnostic virtual text.
 colors["DiagnosticVirtualTextWarn"] = { colors["DiagnosticWarn"], bg = t.bg.mix(t.warning, 20) } -- Used for "Warn" diagnostic virtual text.
-colors["DiagnosticVirtualTextInfo"] = { colors["DiagnosticInfo"], bg = t.bg.mix(t.info, 20) }    -- Used for "Info" diagnostic virtual text.
-colors["DiagnosticVirtualTextHint"] = { colors["DiagnosticHint"], bg = t.bg.mix(t.hint, 20) }    -- Used for "Hint" diagnostic virtual text.
-colors["DiagnosticUnderlineError"] = { gui = "undercurl", sp = t.error }               -- Used to underline "Error" diagnostics.
-colors["DiagnosticUnderlineWarn"] = { gui = "undercurl", sp = t.warning }              -- Used to underline "Warn" diagnostics.
-colors["DiagnosticUnderlineInfo"] = { gui = "undercurl", sp = t.info }                 -- Used to underline "Info" diagnostics.
-colors["DiagnosticUnderlineHint"] = { gui = "undercurl", sp = t.hint }                 -- Used to underline "Hint" diagnostics.
+colors["DiagnosticVirtualTextInfo"] = { colors["DiagnosticInfo"], bg = t.bg.mix(t.info, 20) } -- Used for "Info" diagnostic virtual text.
+colors["DiagnosticVirtualTextHint"] = { colors["DiagnosticHint"], bg = t.bg.mix(t.hint, 20) } -- Used for "Hint" diagnostic virtual text.
+colors["DiagnosticUnderlineError"] = { gui = "undercurl", sp = t.error } -- Used to underline "Error" diagnostics.
+colors["DiagnosticUnderlineWarn"] = { gui = "undercurl", sp = t.warning } -- Used to underline "Warn" diagnostics.
+colors["DiagnosticUnderlineInfo"] = { gui = "undercurl", sp = t.info } -- Used to underline "Info" diagnostics.
+colors["DiagnosticUnderlineHint"] = { gui = "undercurl", sp = t.hint } -- Used to underline "Hint" diagnostics.
 -- DiagnosticFloatingError    { } , -- Used to color "Error" diagnostic messages in diagnostics float. See |vim.diagnostic.open_float()|
 -- DiagnosticFloatingWarn     { } , -- Used to color "Warn" diagnostic messages in diagnostics float.
 -- DiagnosticFloatingInfo     { } , -- Used to color "Info" diagnostic messages in diagnostics float.
@@ -287,12 +287,12 @@ colors["@text.underline"] = colors["Underlined"]
 colors["@text.title"] = { fg = t.keyword }
 colors["@text.literal"] = colors["Property"]
 colors["@text.uri"] = { fg = t.tag, sp = t.tag, gui = "underline" } -- Any URI like a link or email.
-colors["@variable"] = colors["Identifier"]                                -- Variable names that are defined by the languages like `this` or `self`.
-colors["@variable.builtin"] = colors["Statement"]                         -- Variable names that are defined by the languages like `this` or `self`.
+colors["@variable"] = colors["Identifier"] -- Variable names that are defined by the languages like `this` or `self`.
+colors["@variable.builtin"] = colors["Statement"] -- Variable names that are defined by the languages like `this` or `self`.
 colors["@tag"] = colors["Tag"]
-colors["@attribute"] = { fg = t.label }                             -- Variable names that are defined by the languages, like `this` or `self`.
-colors["@tag.attribute"] = { fg = t.attribute }                     -- Variable names that are defined by the languages, like `this` or `self`.
-colors["@error"] = colors["Error"]                                        -- Variable names that are defined by the languages like `this` or `self`.
+colors["@attribute"] = { fg = t.label } -- Variable names that are defined by the languages, like `this` or `self`.
+colors["@tag.attribute"] = { fg = t.attribute } -- Variable names that are defined by the languages, like `this` or `self`.
+colors["@error"] = colors["Error"] -- Variable names that are defined by the languages like `this` or `self`.
 colors["@warning"] = colors["WarningMsg"]
 colors["@info"] = { fg = t.info }
 --
@@ -303,13 +303,12 @@ colors["@info"] = { fg = t.info }
 
 -- Language Overrides
 -- JSON
-colors["@label.json"] = { fg = t.property }  -- For labels: `label:` in C and `:label:` in Lua.
+colors["@label.json"] = { fg = t.property } -- For labels: `label:` in C and `:label:` in Lua.
 colors["@label.jsonc"] = { fg = t.property } -- For labels: `label:` in C and `:label:` in Lua.
 -- help files
 colors["@label.help"] = colors["@text.uri"]
 -- html
 colors["@text.uri.html"] = { gui = "underline" }
-
 
 -- Treesitter highlight groups update
 -- Treesitter standard capture groups
@@ -327,7 +326,6 @@ colors["@markup.list"] = colors["@punctuation.special"]
 -- Helix capture groups
 colors["@function.method"] = colors["@method"]
 colors["@string.special.url"] = colors["@text.uri"]
-
 
 -- semantic highlighting
 colors["@lsp.type.namespace"] = colors["@namespace"]
@@ -674,7 +672,6 @@ colors["WhichKeyDesc"] = colors["@text.title"]
 -- WhichKeyFloat = {}
 -- WhichKeyBorder = {}
 -- WhichKeyValue = colors["Character"]
-
 
 -- Diffview
 colors["DiffviewStatusAdded"] = { fg = t.method }

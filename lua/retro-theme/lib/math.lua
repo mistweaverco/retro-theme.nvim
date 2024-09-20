@@ -9,5 +9,5 @@ end
 
 return {
   round = round,
-  clamp = clamp
+  clamp = clamp,
 }

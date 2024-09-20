@@ -20,7 +20,7 @@ M.exists = function()
 end
 
 M.write = function(colors)
-  if (config.disable_cache or config.hot_reload) then
+  if config.disable_cache or config.hot_reload then
     return
   end
   local serpent = require("retro-theme.lib.serpent")
@@ -31,10 +31,10 @@ M.write = function(colors)
 end
 
 M.read = function()
-  if (config.disable_cache or config.hot_reload) then
+  if config.disable_cache or config.hot_reload then
     return nil
   end
-  local colors = require('retro-theme.cache.default')
+  local colors = require("retro-theme.cache.default")
   if not colors then
     return nil
   end

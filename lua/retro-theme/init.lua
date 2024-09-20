@@ -13,12 +13,12 @@ function M.reload()
 end
 
 function M.load()
-  require('retro-theme.colorscheme')
-  vim.g.colors_name = 'retro-theme'
+  require("retro-theme.colorscheme")
+  vim.g.colors_name = "retro-theme"
 end
 
 function M.clear_cache()
-  require('retro-theme.lib.cache').clear()
+  require("retro-theme.lib.cache").clear()
 end
 
 function M.setup(options)

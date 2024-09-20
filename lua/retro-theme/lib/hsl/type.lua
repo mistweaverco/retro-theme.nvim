@@ -1,5 +1,5 @@
-local hsl_convert = require('retro-theme.lib.hsl.convert')
-local hsl = require('retro-theme.lib.hsl')
+local hsl_convert = require("retro-theme.lib.hsl.convert")
+local hsl = require("retro-theme.lib.hsl")
 
 --
 -- HSL Color
@@ -10,7 +10,9 @@ local hsl = require('retro-theme.lib.hsl')
 local type_fns = {
   from_hex = hsl_convert.hex_to_hsl,
   to_hex = hsl_convert.hsl_to_hex,
-  name = function() return "hsl()" end
+  name = function()
+    return "hsl()"
+  end,
 }
 
 local M = function(h_or_hex, s, l)
