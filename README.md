@@ -8,7 +8,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/mistweaverco/retro-theme.nvim?style=for-the-badge)](https://github.com/mistweaverco/retro-theme.nvim/releases/latest)
 [![Discord](https://img.shields.io/badge/discord-join-7289da?style=for-the-badge&logo=discord)](https://discord.gg/QyVQmfY4Rt)
 
-[Requirements](#requirements) • [Install](#install) • [Configuration](#configuration)
+[Requirements](#requirements) • [Install](#install) • [Configuration](#configuration) • [Colors](#base-colors) 
 
 <p></p>
 
@@ -45,3 +45,6 @@ See [configuration options](#configuration) for more information.
 },
 ```
 
+## Base colors
+
+![image](https://github.com/user-attachments/assets/2377b653-bd8a-48f5-a2e9-2470b7d68885)
