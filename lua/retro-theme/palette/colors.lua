@@ -115,10 +115,10 @@ colors["Cursor"] = { bg = t.cursor, fg = t.bg } -- character under the cursor
 colors["lCursor"] = colors["Cursor"] -- the character under the cursor when |language-mapping| is used (see 'guicursor')
 colors["CursorIM"] = colors["Cursor"] -- like Cursor, but used when in IME mode |CursorIM|
 colors["Directory"] = { fg = t.keyword } -- directory names (and other special names in listings)
-colors["DiffAdd"] = { bg = t.diffAdd } -- diff mode: Added line |diff.txt|
-colors["DiffChange"] = { bg = t.diffChange } -- diff mode: Changed line |diff.txt|
-colors["DiffDelete"] = { bg = t.diffDelete } -- diff mode: Deleted line |diff.txt|
-colors["DiffText"] = { bg = t.diffText } -- diff mode: Changed text within a changed line |diff.txt|
+colors["DiffAdd"] = { bg = t.diffAdd, fg = t.bg } -- diff mode: Added line |diff.txt|
+colors["DiffChange"] = { bg = t.diffChange, fg = t.bg } -- diff mode: Changed line |diff.txt|
+colors["DiffDelete"] = { bg = t.diffDelete, fg = t.bg } -- diff mode: Deleted line |diff.txt|
+colors["DiffText"] = { bg = t.diffText, fg = t.bg } -- diff mode: Changed text within a changed line |diff.txt|
 colors["EndOfBuffer"] = { fg = t.punctuation } -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
 colors["TermCursor"] = colors["Cursor"] -- cursor in a focused terminal
 colors["TermCursorNC"] = {} -- cursor in an unfocused terminal
