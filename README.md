@@ -16,6 +16,10 @@ A minimal retro theme for Neovim.
 
 <p></p>
 
+![image](https://github.com/user-attachments/assets/c97dcf18-0076-48ca-8824-398f63a1fb3c)
+
+<p></p>
+
 </div>
 
 ## Requirements
