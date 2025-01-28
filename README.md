@@ -6,9 +6,8 @@
 
 ![Lua](https://img.shields.io/badge/Made%20with%20Lua-blueviolet.svg?style=for-the-badge&logo=lua)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/mistweaverco/retro-theme.nvim?style=for-the-badge)](https://github.com/mistweaverco/retro-theme.nvim/releases/latest)
-[![Discord](https://img.shields.io/badge/discord-join-7289da?style=for-the-badge&logo=discord)](https://discord.gg/QyVQmfY4Rt)
 
-[Requirements](#requirements) • [Install](#install) • [Configuration](#configuration) • [Supported Plugins](#supported-plugins) • [Base colors](#base-colors) 
+[Requirements](#requirements) • [Install](#install) • [Configuration](#configuration) • [Cache](#cache) • [Supported Plugins](#supported-plugins) • [Base colors](#base-colors)
 
 <p></p>
 
