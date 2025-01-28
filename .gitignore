@@ -40,6 +40,3 @@ luac.out
 *.hex
 
 .DS_Store
-
-# nvim session management
-.nvim
