@@ -49,6 +49,23 @@ See [configuration options](#configuration) for more information.
 },
 ```
 
+## Cache
+
+The theme is cached by default to improve performance.
+If you want to disable the cache set `disable_cache` to `true`.
+
+The cache is stored in:
+
+- Linux: `~/.cache/nvim/retro-theme`
+- Windows: `~/AppData/Local/nvim/retro-theme`
+- MacOS: `~/.cache/nvim/retro-theme`
+
+You can remove the cache by running:
+
+```lua
+require('retro-theme').clear_cache()
+```
+
 ## Supported Plugins
 
 Currently supported plugins, others might work but are not tested:

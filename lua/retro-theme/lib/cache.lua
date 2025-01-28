@@ -17,7 +17,7 @@ M.clear = function()
     return
   end
   if vim.fn.filereadable(cache_path) == 1 then
-    assert(os.remove(path.cache))
+    assert(os.remove(cache_path))
   end
 end
 
