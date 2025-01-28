@@ -634,6 +634,40 @@ colors["CmpItemKindOperator"] = { fg = t.punctuation }
 colors["CmpItemKindSnippet"] = { fg = t.label }
 --
 
+-- Blink Cmp
+colors["BlinkCmpDoc"] = { fg = t.fg, bg = t.bgFloat }
+colors["BlinkCmpDocBorder"] = { fg = t.punctuation, bg = t.bgFloat }
+colors["BlinkCmpLabel"] = { fg = t.fg }
+colors["BlinkCmpLabelDeprecated"] = { fg = t.fg, gui = "strikethrough" }
+colors["BlinkCmpLabelMatch"] = { fg = t.primary }
+colors["BlinkCmpLabelDetail"] = { fg = t.attribute }
+colors["BlinkCmpLabelDescription"] = { fg = t.attribute }
+colors["BlinkCmpSource"] = { fg = t.attribute }
+colors["BlinkCmpKindText"] = { fg = t.comment }
+colors["BlinkCmpKindDefault"] = { fg = t.fb }
+colors["BlinkCmpKindKeyword"] = { fg = t.keyword }
+colors["BlinkCmpKindVariable"] = { fg = t.fg }
+colors["BlinkCmpKindConstant"] = { fg = t.constant }
+colors["BlinkCmpKindReference"] = { fg = t.fg }
+colors["BlinkCmpKindValue"] = { fg = t.fg }
+colors["BlinkCmpKindFunction"] = { fg = t.method }
+colors["BlinkCmpKindMethod"] = { fg = t.method }
+colors["BlinkCmpKindConstructor"] = { fg = t.type }
+colors["BlinkCmpKindClass"] = { fg = t.type }
+colors["BlinkCmpKindInterface"] = { fg = t.type }
+colors["BlinkCmpKindStruct"] = { fg = t.type }
+colors["BlinkCmpKindEvent"] = { fg = t.label }
+colors["BlinkCmpKindEnum"] = { fg = t.type }
+colors["BlinkCmpKindUnit"] = { fg = t.number }
+colors["BlinkCmpKindModule"] = { fg = t.keyword }
+colors["BlinkCmpKindProperty"] = { fg = t.property }
+colors["BlinkCmpKindField"] = { fg = t.property }
+colors["BlinkCmpKindTypeParameter"] = { fg = t.type }
+colors["BlinkCmpKindEnumMember"] = { fg = t.type }
+colors["BlinkCmpKindOperator"] = { fg = t.punctuation }
+colors["BlinkCmpKindSnippet"] = { fg = t.label }
+--
+
 -- nvim illuminate
 colors["IlluminatedWordText"] = { bg = t.grey7 }
 colors["IlluminatedWordRead"] = { bg = t.grey7 }
