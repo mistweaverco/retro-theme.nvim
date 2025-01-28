@@ -8,7 +8,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/mistweaverco/retro-theme.nvim?style=for-the-badge)](https://github.com/mistweaverco/retro-theme.nvim/releases/latest)
 [![Discord](https://img.shields.io/badge/discord-join-7289da?style=for-the-badge&logo=discord)](https://discord.gg/QyVQmfY4Rt)
 
-[Requirements](#requirements) • [Install](#install) • [Configuration](#configuration) • [Colors](#base-colors) 
+[Requirements](#requirements) • [Install](#install) • [Configuration](#configuration) • [Supported Plugins](#supported-plugins) • [Base colors](#base-colors) 
 
 <p></p>
 
@@ -48,6 +48,26 @@ See [configuration options](#configuration) for more information.
   }
 },
 ```
+
+## Supported Plugins
+
+Currently supported plugins, others might work but are not tested:
+
+- [blink.cmp](https://github.com/Saghen/blink.cmp)
+- [copilot.vim](https://github.com/github/copliot.vim)
+- [diffview.nvim](https://github.com/sindrets/diffview.nvim)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [kulala.nvim](https://github.com/mistweaverco/kulala.nvim)
+- [lsp-config](https://github.com/neovim/lsp-config)
+- [lualine.nvim](https://github.com/hoob3rt/lualine.nvim)
+- [neogit](https://github.com/TimUntersberger/neogit)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
+- [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
 
 ## Base colors
 
