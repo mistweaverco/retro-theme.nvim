@@ -809,6 +809,10 @@ colors["VirtColumn"] = colors["Whitespace"]
 -- RainbowDelimiterViolet = {}
 -- RainbowDelimiterCyan = {}
 
+-- mini.indentscope
+colors["MiniIndentScopeSymbol"] = colors["Whitespace"]
+colors["MiniIndentScopeSymbolOff"] = colors["DiagnosticWarn"]
+
 -- Neotest
 colors["NeotestPassed"] = { fg = t.added }
 colors["NeotestRunning"] = colors["DiagnosticInfo"]

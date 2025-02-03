@@ -79,6 +79,7 @@ Currently supported plugins, others might work but are not tested:
 - [neogit](https://github.com/TimUntersberger/neogit)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
