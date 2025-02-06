@@ -666,6 +666,7 @@ colors["BlinkCmpKindTypeParameter"] = { fg = t.type }
 colors["BlinkCmpKindEnumMember"] = { fg = t.type }
 colors["BlinkCmpKindOperator"] = { fg = t.punctuation }
 colors["BlinkCmpKindSnippet"] = { fg = t.label }
+colors["BlinkCmpMenuBorder"] = { fg = t.primary, bg = t.bg }
 --
 
 -- nvim illuminate
