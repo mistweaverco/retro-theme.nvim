@@ -76,7 +76,7 @@ Currently supported plugins, others might work but are not tested:
 - [kulala.nvim](https://github.com/mistweaverco/kulala.nvim)
 - [lsp-config](https://github.com/neovim/lsp-config)
 - [lualine.nvim](https://github.com/hoob3rt/lualine.nvim)
-- [neogit](https://github.com/TimUntersberger/neogit)
+- [neogit](https://github.com/NeogitOrg/neogit)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
 - [mini.indentscope](https://github.com/echasnovski/mini.indentscope)

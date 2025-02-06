@@ -698,6 +698,20 @@ colors["MasonError"] = colors["Error"]
 colors["MasonHeading"] = { gui = "bold,underline", fg = t.fg }
 --
 
+-- Neogit
+colors["NeogitHunkHeader"] = { bg = t.bg, fg = "#98c379" } -- Light green or blue
+colors["NeogitDiffContext"] = { bg = t.bg, fg = "#cccccc" } -- Light gray
+colors["NeogitDiffAdd"] = { bg = t.bg, fg = "#a6e22e" } -- Brighter green
+colors["NeogitDiffDelete"] = { bg = t.bg, fg = "#f07178" } -- Distinct red
+colors["NeogitDiffHeader"] = { bg = t.bg, fg = "#98c379" } -- Same as NeogitHunkHeader
+colors["NeogitActiveItem"] = { bg = t.bg, fg = "#e5c07b" } -- Bright yellow or white
+colors["NeogitHunkHeaderHighlight"] = { bg = t.bg, fg = "#b5bd68" } -- Slightly brighter green
+colors["NeogitDiffContextHighlight"] = { bg = t.bg, fg = "#e0e0e0" } -- Slightly lighter gray
+colors["NeogitDiffAddHighlight"] = { bg = t.bg, fg = "#a6e22e" } -- Same as NeogitDiffAdd
+colors["NeogitDiffDeleteHighlight"] = { bg = t.bg, fg = "#f07178" } -- Same as NeogitDiffDelete
+colors["NeogitDiffHeaderHighlight"] = { bg = t.bg, fg = "#b5bd68" } -- Same as NeogitHunkHeaderHighlight
+--
+
 -- which-key
 colors["WhichKey"] = colors["Character"]
 colors["WhichKeyGroup"] = colors["Tag"]
