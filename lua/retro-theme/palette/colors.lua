@@ -798,6 +798,25 @@ colors["NotifyINFOTitle"] = colors["NotifyINFOBorder"]
 colors["NotifyDEBUGTitle"] = colors["NotifyDEBUGBorder"]
 colors["NotifyTRACETitle"] = colors["NotifyTRACEBorder"]
 --
+--
+-- Uzuri
+colors["UzuriNotifyBackground"] = colors["NormalFloat"]
+colors["UzuriNotifyERRORBorder"] = { colors["Normal"], fg = t.error }
+colors["UzuriNotifyWARNBorder"] = { colors["Normal"], fg = t.warning }
+colors["UzuriNotifyINFOBorder"] = { colors["Normal"], fg = t.info }
+colors["UzuriNotifyDEBUGBorder"] = { colors["Normal"], fg = t.punctuation }
+colors["UzuriNotifyTRACEBorder"] = { colors["Normal"], fg = t.property }
+colors["UzuriNotifyERRORIcon"] = colors["UzuriNotifyERRORBorder"]
+colors["UzuriNotifyWARNIcon"] = colors["UzuriNotifyWARNBorder"]
+colors["UzuriNotifyINFOIcon"] = colors["UzuriNotifyINFOBorder"]
+colors["UzuriNotifyDEBUGIcon"] = colors["UzuriNotifyDEBUGBorder"]
+colors["UzuriNotifyTRACEIcon"] = colors["UzuriNotifyTRACEBorder"]
+colors["UzuriNotifyERRORTitle"] = colors["UzuriNotifyERRORBorder"]
+colors["UzuriNotifyWARNTitle"] = colors["UzuriNotifyWARNBorder"]
+colors["UzuriNotifyINFOTitle"] = colors["UzuriNotifyINFOBorder"]
+colors["UzuriNotifyDEBUGTitle"] = colors["UzuriNotifyDEBUGBorder"]
+colors["UzuriNotifyTRACETitle"] = colors["UzuriNotifyTRACEBorder"]
+--
 
 -- -- Visual Multi.
 -- VM_Extend = { bg = colors.selection_inactive }
