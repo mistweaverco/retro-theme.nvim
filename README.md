@@ -72,6 +72,7 @@ Currently supported plugins, others might work but are not tested:
 - [blink.cmp](https://github.com/Saghen/blink.cmp)
 - [copilot.vim](https://github.com/github/copliot.vim)
 - [diffview.nvim](https://github.com/sindrets/diffview.nvim)
+- [diffconflicts.nvim](https://github.com/mistweaverco/diffconflicts.nvim)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [kulala.nvim](https://github.com/mistweaverco/kulala.nvim)
 - [lsp-config](https://github.com/neovim/lsp-config)
